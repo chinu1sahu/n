@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            border: border-box;
+        }
+     .navbar{
+        background-color: black;
+        width: auto;
+        height: 60px;
+        color: white;
+        display: flex;
+        align-items: center;
+        
+     }
+     .nav-logo{
+        height: 50px;
+        width: 150px;
+     }
+     .logo{
+        background-image: url(amazon.png);
+        height: 50px;
+        width: 100%;
+        background-size: cover;
+     }
+     .border{
+        border: 2px solid transparent;
+     }
+     .border:hover{
+        border: 2px solid white;
+     }
+     .add-first{
+          color: #cccccc;
+          font-size: 1rem;
+          margin-left: 15px;
+     }
+     .add-second{
+         font-size: 1rem;
+         margin-left: 4px;
+     }
+     .add-icon{
+        display: flex;
+        align-items: center;
+     }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+              <div class="nav-address border">
+                <p class="add-first">Delivery to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+              </div>
+              <div class="nav-seach">
+                <select>
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Amazon">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+        </div>
+    </header>
+</body>
+</html>
